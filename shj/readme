@@ -1,1 +1,15 @@
 
+
+1. lstm baseline
+EMBEDDING = glove, fasttext
+MAX_FEATURES = 100000 #보통 40000에서 100000
+BATCH_SIZE = 512
+LSTM_UNITS = 128
+DENSE_HIDDEN_UNITS = 4 * LSTM_UNITS #lstm cell의 output vector 차원 수 = 512
+EPOCHS = 6
+MAX_LEN = 300
+
+2. lstm + gru
+EMBEDDING = glove
+MAX_LEN = 200
+max_words = 50000
