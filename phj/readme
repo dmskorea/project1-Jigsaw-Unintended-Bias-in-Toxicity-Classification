@@ -1,1 +1,35 @@
+# base model(text preprocessing, LSTM) : 0.93759
+https://www.kaggle.com/morrispark/reaction?scriptVersionId=14950179
 
+# base model - sexual explicit add : 0.93737
+https://www.kaggle.com/morrispark/treat-remove?scriptVersionId=14952221
+
+# base model - treat remove : 0.93714
+https://www.kaggle.com/morrispark/treat-remove
+
+# base model - detailed identity column add : 0.90093
+https://www.kaggle.com/morrispark/rating?scriptVersionId=14951158
+
+# base model - numeric text add : 0.93342
+https://www.kaggle.com/morrispark/annotator?scriptVersionId=14951914
+
+# base model - reaction weights add : 0.93759
+https://www.kaggle.com/morrispark/reaction?scriptVersionId=14961221
+
+# base model - annotator weights add : 0.93739
+https://www.kaggle.com/morrispark/annotator-add
+
+# base model - rating weights add : 0.93348
+https://www.kaggle.com/morrispark/rating-add
+
+# base model - time weights add : 0.41041
+https://www.kaggle.com/morrispark/time-add
+
+# LSTM + BERT : out of memory
+https://www.kaggle.com/morrispark/bert-lstm
+
+# LSTM + BERT (Sequence = 220) : 0.93865
+https://www.kaggle.com/morrispark/seq220
+
+# LSTM + BERT (Epoch = 4) : 0.93853
+https://www.kaggle.com/morrispark/epoch4
