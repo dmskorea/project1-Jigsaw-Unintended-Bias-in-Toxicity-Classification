@@ -1,15 +1,11 @@
+06/08 issue
+- 결측치, correlation 높은 것 확인
+- keras보다 pytorch로 하면 빠름
+- cleansing 정도의 따른 성능(####과 같은 것도 의미가 있을 수 있음 -> spelling error와 축약형만 처리, 
+                                                                소문자로 통일하는 것을 뺏더니 성능이 더 좋은 경우가 있음)
+- time문제 -> pickle, train data set의 memory줄이기
 
 
-1. lstm baseline
-EMBEDDING = glove, fasttext
-MAX_FEATURES = 100000 #보통 40000에서 100000
-BATCH_SIZE = 512
-LSTM_UNITS = 128
-DENSE_HIDDEN_UNITS = 4 * LSTM_UNITS #lstm cell의 output vector 차원 수 = 512
-EPOCHS = 6
-MAX_LEN = 300
+1. cnn baseline - 0.93047 
+https://www.kaggle.com/hallohj/jigsaw-cnn
 
-2. lstm + gru
-EMBEDDING = glove
-MAX_LEN = 200
-max_words = 50000
