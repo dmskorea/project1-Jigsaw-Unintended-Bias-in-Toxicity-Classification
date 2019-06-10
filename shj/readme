@@ -6,6 +6,30 @@
 - time문제 -> pickle, train data set의 memory줄이기
 
 
-1. cnn baseline - 0.93047 
-https://www.kaggle.com/hallohj/jigsaw-cnn
+1. cnn baseline -> 0.93047  (https://www.kaggle.com/hallohj/jigsaw-cnn)
+             sampling = (frac=0.9,random_state=1234)
+             embedding = fasttext-crawl-300d-2m, glove840b300dtxt
+             preprocess = "/-'?!.,#$%\'()*+-/:;<=>@[\\]^_`{|}~`" + '""“”’' + '∞θ÷α•à−β∅³π‘₹´°£€\×™√²—–&'
+             NUM_MODELS = 2
+             BATCH_SIZE = 512
+             LSTM_UNITS = 128
+             DENSE_HIDDEN_UNITS = 4 * LSTM_UNITS
+             EPOCHS = 3
+             MAX_LEN = 220
 
+2. cnn baseline 
+
+3. bert + lstm baseline -> 0.93845     (https://www.kaggle.com/hallohj/jigsaw3-bert-lstm)
+             embedding = crawl-300d-2M.gensim, glove.840B.300d.gensim
+             bert model : MAX_SEQUENCE_LENGTH = 300
+                          BATCH_SIZE = 512
+                          LSTM_UNITS = 128
+                          DENSE_HIDDEN_UNITS = 4 * LSTM_UNITS
+                          MAX_LEN = 220
+
+             LSTM model : 전처리 = symbols_to_isolate, symbols_to_delete
+                          max_features = 410047
+                          maxlen = 300
+                          batch_size = 512
+             
+             blending weight : (bert - 0.333), (lstm - 0.667)
