@@ -5,26 +5,24 @@
                                                                 소문자로 통일하는 것을 뺏더니 성능이 더 좋은 경우가 있음)
 - time문제 -> pickle, train data set의 memory줄이기
 
-
-1. cnn baseline -> 0.93047  (https://www.kaggle.com/hallohj/jigsaw-cnn)
-             sampling = (frac=0.9,random_state=1234)
+1. cnn baseline -> 0.93107  (https://www.kaggle.com/hallohj/jigsaw-cnn-3)
              embedding = fasttext-crawl-300d-2m, glove840b300dtxt
              preprocess = "/-'?!.,#$%\'()*+-/:;<=>@[\\]^_`{|}~`" + '""“”’' + '∞θ÷α•à−β∅³π‘₹´°£€\×™√²—–&'
              BATCH_SIZE = 512
              LSTM_UNITS = 128
              DENSE_HIDDEN_UNITS = 4 * LSTM_UNITS
+             EPOCHS = 4
+             MAX_LEN = 256
+             
+2. cnn (ephoch3, train['target'].values>=0.5) -> 0.93047  (https://www.kaggle.com/hallohj/jigsaw-cnn)
+             sampling = (frac=0.9,random_state=1234)
+             embedding = fasttext-crawl-300d-2m, glove840b300dtxt
              EPOCHS = 3
              MAX_LEN = 220
 
-2. cnn baseline -> 0.93107  (https://www.kaggle.com/hallohj/jigsaw-cnn-3)
-             embedding = fasttext-crawl-300d-2m, glove840b300dtxt
-             BATCH_SIZE = 512
-             LSTM_UNITS = 128
-             DENSE_HIDDEN_UNITS = 4 * LSTM_UNITS
-             EPOCHS = 4
-             MAX_LEN = 256
 
-3. bert + lstm baseline -> 0.93845     (https://www.kaggle.com/hallohj/jigsaw3-bert-lstm)
+
+1. bert + lstm baseline -> 0.93845     (https://www.kaggle.com/hallohj/jigsaw3-bert-lstm)
              embedding = crawl-300d-2M.gensim, glove.840B.300d.gensim
              bert model : MAX_SEQUENCE_LENGTH = 300
                           BATCH_SIZE = 512
@@ -39,8 +37,8 @@
              
              blending weight : (bert - 0.333), (lstm - 0.667)
              
-4. bert + lstm (blending weight change) -> 0.93844     
+2. bert + lstm (blending weight change) -> 0.93844     
              blending weight : (bert - 0.5), (lstm - 0.5)
              
-5. bert + lstm (blending weight change) -> 0.93801    
+3. bert + lstm (blending weight change) -> 0.93801    
              blending weight : (bert - 0.2), (lstm - 0.8)
