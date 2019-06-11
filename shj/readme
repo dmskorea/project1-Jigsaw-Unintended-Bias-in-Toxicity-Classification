@@ -39,5 +39,8 @@
              
              blending weight : (bert - 0.333), (lstm - 0.667)
              
-3. bert + lstm baseline2(blending weight change) -> 0.93844     
+4. bert + lstm (blending weight change) -> 0.93844     
              blending weight : (bert - 0.5), (lstm - 0.5)
+             
+5. bert + lstm (blending weight change) -> 0.93801    
+             blending weight : (bert - 0.2), (lstm - 0.8)
