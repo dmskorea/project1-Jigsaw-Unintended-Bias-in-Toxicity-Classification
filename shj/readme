@@ -10,7 +10,6 @@
              sampling = (frac=0.9,random_state=1234)
              embedding = fasttext-crawl-300d-2m, glove840b300dtxt
              preprocess = "/-'?!.,#$%\'()*+-/:;<=>@[\\]^_`{|}~`" + '""“”’' + '∞θ÷α•à−β∅³π‘₹´°£€\×™√²—–&'
-             NUM_MODELS = 2
              BATCH_SIZE = 512
              LSTM_UNITS = 128
              DENSE_HIDDEN_UNITS = 4 * LSTM_UNITS
