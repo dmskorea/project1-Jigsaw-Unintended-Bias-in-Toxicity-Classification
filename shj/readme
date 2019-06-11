@@ -38,3 +38,6 @@
                           batch_size = 512
              
              blending weight : (bert - 0.333), (lstm - 0.667)
+             
+3. bert + lstm baseline2(blending weight change) -> 0.93844     
+             blending weight : (bert - 0.5), (lstm - 0.5)
