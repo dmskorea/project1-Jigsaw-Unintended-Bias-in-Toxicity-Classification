@@ -17,7 +17,13 @@
              EPOCHS = 3
              MAX_LEN = 220
 
-2. cnn baseline 
+2. cnn baseline -> 0.93107  (https://www.kaggle.com/hallohj/jigsaw-cnn-3)
+             embedding = fasttext-crawl-300d-2m, glove840b300dtxt
+             BATCH_SIZE = 512
+             LSTM_UNITS = 128
+             DENSE_HIDDEN_UNITS = 4 * LSTM_UNITS
+             EPOCHS = 4
+             MAX_LEN = 256
 
 3. bert + lstm baseline -> 0.93845     (https://www.kaggle.com/hallohj/jigsaw3-bert-lstm)
              embedding = crawl-300d-2M.gensim, glove.840B.300d.gensim
