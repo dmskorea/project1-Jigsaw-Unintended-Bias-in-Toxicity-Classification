@@ -45,3 +45,6 @@
              
 3. bert + lstm (blending weight change) -> 0.93685   
              blending weight : (bert - 0.8), (lstm - 0.2)
+             
+★4. bert + lstm (blending weight change) -> 0.93849     
+             blending weight : (bert - 0.35), (lstm - 0.65)
