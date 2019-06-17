@@ -3,9 +3,26 @@ merge baseline
 baseline: 0.93845  / 7055s
 https://www.kaggle.com/chechir/bert-lstm-rank-blender
 
+# ensemble
 1. small bert model 120mil data : 0.93852 / 7110s
 https://www.kaggle.com/kdafke123141/bert-lstm-rank-blender-small
 
+2. large bert model 120mil data : out of memory?
+
+
+
+
+# single model
+
+1. bert small single model : 0.93373
+(valia version : 0.9298784415544122) : howto improve?
+
+(my own 120mil : 0.93413)
+
+2. bert larger model : 0.92826
+https://www.kaggle.com/kdafke123141/pytorch-bert-inference-large-model
+
+3. bert larger model_epoch2 : 5 submition validation (after ...)
 
 
 
