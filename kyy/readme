@@ -1,3 +1,13 @@
+merge baseline
+
+baseline: 0.93845  / 7055s
+https://www.kaggle.com/chechir/bert-lstm-rank-blender
+
+1. small bert model 120mil data : 0.93852 / 7110s
+https://www.kaggle.com/kdafke123141/bert-lstm-rank-blender-small
+
+
+
 
 3차 모임 base line
 
@@ -5,8 +15,6 @@ data augmentation sorce
 (https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/discussion/48038#latest-310689)
 -too many requested
 
-데이터 fragmentation 소스
-- to be upload
 
 
 
