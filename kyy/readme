@@ -1,7 +1,34 @@
 merge baseline
 
+baseline: 0.93845  / 7055s
+https://www.kaggle.com/chechir/bert-lstm-rank-blender
 
-valinal
+1. ensemble
+
+a. small bert model 120mil data : 0.93852 / 7110s
+https://www.kaggle.com/kdafke123141/bert-lstm-rank-blender-small
+maxlen을 300-> 220으로 올렸을 때 성능이 오른이유는 학습 셋이 220 으로 학습 시켰기 때문?
+(박희준님 커널)
+
+b. lstm + bert : small_max_300_120mi
+0_epoch : 0.93899 ( frist)
+1_epoch : 0.93957 ( second)
+https://www.kaggle.com/kdafke123141/bert-lstm-rank-blender-small
+
+
+c. lstm + bert : small_max_300_120mi (weight: 0.66 + 0.33)
+1_epoch : 0.93975
+https://www.kaggle.com/kdafke123141/bert-lstm-rank-blender-small-weight?scriptVersionId=15862427
+
+
+d. jigsaw-starter-blend-base-max_300/epoch:2 : 0.93924
+
+
+e. *lstm + bert : small_170mi_max_300_5e5
+0_epoch : : 0.93913
+1_epoch : ?
+
+2. valina
 
 large
 0.9285 (large maxlen220_epoch0)
@@ -11,56 +38,27 @@ small
 0.9338 (samll maxlen300_epoch0)
 0.9335 (samll maxlen300_epoch1)
 
-
-
-lstm + bert : small_max_300_120mi
-0_epoch : 0.93899 ( frist)
-1_epoch : 0.93957 ( second)
-https://www.kaggle.com/kdafke123141/bert-lstm-rank-blender-small
-
-
-lstm + bert : small_max_300_120mi (weight: 0.66 + 0.33)
-0.93975
-https://www.kaggle.com/kdafke123141/bert-lstm-rank-blender-small-weight?scriptVersionId=15862427
-
-
-
-jigsaw-starter-blend-base-max_300/epoch:2 : 0.93924
-
-
-*lstm + bert : small_170mi_max_300_5e5
-0_epoch : : 0.93913
-1_epoch : ?
-
-
-
-
-
-baseline: 0.93845  / 7055s
-https://www.kaggle.com/chechir/bert-lstm-rank-blender
-
-# ensemble
-1. small bert model 120mil data : 0.93852 / 7110s
-https://www.kaggle.com/kdafke123141/bert-lstm-rank-blender-small
-
-2. large bert model 120mil data : out of memory?
-
+small 170mil / maxlen300 / 5e5
+0.9370  (loss 0.12)
 
 
 
 # single model
 
-1. bert small single model : 0.93373
+//small
+1. bert small single model : 0.93373  / (my own 120mil : 0.93413)
 (valia version : 0.9298784415544122) : howto improve?
 
-(my own 120mil : 0.93413)
+2. bert small single model_maxlen : ?
+(valia version : epoch-0-> 0.9338 / epoch-1 -> 0.9335) : howto improve?
 
+//large
 2. bert larger model : 0.92826
 https://www.kaggle.com/kdafke123141/pytorch-bert-inference-large-model
 
 3. bert larger model_epoch2 : 5 submition validation (after ...)
 
-
+/////////////////////////////////////////////////////////////////////////////////////////////
 
 3차 모임 base line
 
