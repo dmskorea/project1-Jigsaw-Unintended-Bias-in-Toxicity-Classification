@@ -39,8 +39,8 @@ small
 0.9335 (samll maxlen300_epoch1)
 
 small 170mil / maxlen300 / 5e5
-0.9370  (loss 0.12)
-
+0.9370  (epoch0 - loss 0.12)
+0.9359  (epoch1 - loss 0.09 )
 
 
 # single model
