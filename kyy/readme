@@ -1,5 +1,41 @@
 merge baseline
 
+
+valinal
+
+large
+0.9285 (large maxlen220_epoch0)
+0.9289 (large maxlen220_epoch1)
+
+small 
+0.9338 (samll maxlen300_epoch0)
+0.9335 (samll maxlen300_epoch1)
+
+
+
+lstm + bert : small_max_300_120mi
+0_epoch : 0.93899 ( frist)
+1_epoch : 0.93957 ( second)
+https://www.kaggle.com/kdafke123141/bert-lstm-rank-blender-small
+
+
+lstm + bert : small_max_300_120mi (weight: 0.66 + 0.33)
+0.93975
+https://www.kaggle.com/kdafke123141/bert-lstm-rank-blender-small-weight?scriptVersionId=15862427
+
+
+
+jigsaw-starter-blend-base-max_300/epoch:2 : 0.93924
+
+
+*lstm + bert : small_170mi_max_300_5e5
+0_epoch : : 0.93913
+1_epoch : ?
+
+
+
+
+
 baseline: 0.93845  / 7055s
 https://www.kaggle.com/chechir/bert-lstm-rank-blender
 
