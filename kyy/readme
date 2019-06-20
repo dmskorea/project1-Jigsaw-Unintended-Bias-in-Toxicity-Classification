@@ -26,7 +26,21 @@ d. jigsaw-starter-blend-base-max_300/epoch:2 : 0.93924
 
 e. *lstm + bert : small_170mi_max_300_5e5
 0_epoch : : 0.93913
-1_epoch : ?
+1_epoch : 0.94056
+
+
+f.  *lstm + bert : small_170mi-100mi_max_300_5e5-2e5
+3_epoch : 0.935xx ( finetuing incorrect?)
+
+
+
+TODO
+1.loss function classifier에 맞게 변경해보기 (middle)
+2 small model seed 변경해서 ensemble 해보기 (easy)
+3.seed 변경하면서 lr 감쇠
+
+
+
 
 2. valina
 
