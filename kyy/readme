@@ -33,6 +33,9 @@ f.  *lstm + bert : small_170mi-100mi_max_300_5e5-2e5
 3_epoch : 0.935xx ( finetuing incorrect?)
 
 
+ㅎ. 1 lstm + 2 bert ( differ lr, seed) : 0.94076
+
+
 
 TODO
 1.loss function classifier에 맞게 변경해보기 (middle)
