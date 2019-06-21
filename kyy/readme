@@ -33,7 +33,10 @@ f.  *lstm + bert : small_170mi-100mi_max_300_5e5-2e5
 3_epoch : 0.935xx ( finetuing incorrect?)
 
 
-ㅎ. 1 lstm + 2 bert ( differ lr, seed) : 0.94076
+g. 1 lstm + 2 bert ( differ lr) : 0.94076
+
+h. 1 lstm + 3 bert ( differ lr , seed): 0.94086
+
 
 
 
@@ -67,7 +70,10 @@ small 170mil / maxlen300 / 5e5
 (valia version : 0.9298784415544122) : howto improve?
 
 2. bert small single model_maxlen : ?
-(valia version : epoch-0-> 0.9338 / epoch-1 -> 0.9335) : howto improve?
+(valia version : epoch-0-> 0.9338 / epoch-1 -> 0.9335) : how to improve?
+
+
+3. 150mi, maxlen 300, batch 64 seed 1234 : 0.934
 
 //large
 2. bert larger model : 0.92826
