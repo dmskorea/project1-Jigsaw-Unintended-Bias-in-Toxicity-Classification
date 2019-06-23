@@ -37,14 +37,18 @@ g. 1 lstm + 2 bert ( differ lr) : 0.94076
 
 h. 1 lstm + 3 bert ( differ lr , seed): 0.94086
 
+i. 1 lstm + 3 bert + custom loss (weighted): 0.9424
+  - lstm epoch 2 -> 3 
+https://www.kaggle.com/kdafke123141/3bert-1stm-custom-loss
 
+j. (training) 1 lstm + 3 bert + custom loss + multi label cls : xxx
 
 
 TODO
 1.loss function classifier에 맞게 변경해보기 (middle)
 2 small model seed 변경해서 ensemble 해보기 (easy)
 3.seed 변경하면서 lr 감쇠
-
+4. XLnet or GPT 
 
 
 
@@ -65,21 +69,30 @@ small 170mil / maxlen300 / 5e5
 
 # single model
 
+#vanali code test: 100K validation
+
 //small
 1. bert small single model : 0.93373  / (my own 120mil : 0.93413)
-(valia version : 0.9298784415544122) : howto improve?
+(vanila code test : 0.9298784415544122) : howto improve?
 
 2. bert small single model_maxlen : ?
-(valia version : epoch-0-> 0.9338 / epoch-1 -> 0.9335) : how to improve?
+(vanila code test : epoch-0-> 0.9338 / epoch-1 -> 0.9335) : how to improve?
 
 
 3. 150mi, maxlen 300, batch 64 seed 1234 : 0.934
 
+4. small 150mil_max300_custom_loss
+vanila code test : 0.9375
+
+5. small 170mil_max300_custom_loss
+vanila code test : 0.9403
+
 //large
-2. bert larger model : 0.92826
+1. bert larger model : 0.92826
 https://www.kaggle.com/kdafke123141/pytorch-bert-inference-large-model
 
-3. bert larger model_epoch2 : 5 submition validation (after ...)
+2. bert larger model_epoch2 : 5 submition validation (after ...) 
+
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 
