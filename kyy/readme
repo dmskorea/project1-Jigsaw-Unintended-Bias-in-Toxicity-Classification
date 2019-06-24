@@ -41,14 +41,17 @@ i. 1 lstm + 3 bert + custom loss (weighted): 0.9424
   - lstm epoch 2 -> 3 
 https://www.kaggle.com/kdafke123141/3bert-1stm-custom-loss
 
-j. (training) 1 lstm + 3 bert + custom loss + multi label cls : xxx
+j. 1 lstm + 3 bert + custom loss + multi label cls : 0.94258
+
+
+
+
 
 
 TODO
-1.loss function classifier에 맞게 변경해보기 (middle)
-2 small model seed 변경해서 ensemble 해보기 (easy)
-3.seed 변경하면서 lr 감쇠
-4. XLnet or GPT 
+1. optimzer 변경 ( BertAdam -> standard adam)
+2. Seed 변경하면서 lr 감쇠
+
 
 
 
