@@ -1,4 +1,4 @@
-## 1LSTM
+ï»¿## 1LSTM
 
 # (Base) LSTM text preprocessing : 0.93759
 https://www.kaggle.com/morrispark/reaction?scriptVersionId=14950179
@@ -55,7 +55,7 @@ https://www.kaggle.com/morrispark/spacing-punctuation-remove
 https://www.kaggle.com/morrispark/220-dropout
 
 
-## 3BERT + 1LSTM (À±¿µ´Ô º£ÀÌ½º ¸ğµ¨)
+## 3BERT + 1LSTM (ìœ¤ì˜ë‹˜ ë² ì´ìŠ¤ ëª¨ë¸)
 
 # (Base) 3BERT + 1LSTM (custom loss) : 0.94245
 https://www.kaggle.com/kdafke123141/3bert-1stm-custom-loss-multi-label?scriptVersionId=16123382
