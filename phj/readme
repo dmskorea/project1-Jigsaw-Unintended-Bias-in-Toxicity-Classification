@@ -1,3 +1,5 @@
+## 1LSTM
+
 # (Base) LSTM text preprocessing : 0.93759
 https://www.kaggle.com/morrispark/reaction?scriptVersionId=14950179
 
@@ -25,6 +27,9 @@ https://www.kaggle.com/morrispark/rating-add
 # LSTM - time weights add : 0.41041
 https://www.kaggle.com/morrispark/time-add
 
+
+## 1LSTM + 1BERT
+
 # (Base) LSTM + BERT  (Sequence = 220) : 0.93865
 https://www.kaggle.com/morrispark/seq220
 
@@ -48,6 +53,9 @@ https://www.kaggle.com/morrispark/spacing-punctuation-remove
 
 # LSTM + BERT (dropout = 0.5) : 0.93841
 https://www.kaggle.com/morrispark/220-dropout
+
+
+## 3BERT + 1LSTM
 
 # (Base) 3BERT + 1LSTM (custom loss) : 0.94245
 https://www.kaggle.com/kdafke123141/3bert-1stm-custom-loss-multi-label?scriptVersionId=16123382
