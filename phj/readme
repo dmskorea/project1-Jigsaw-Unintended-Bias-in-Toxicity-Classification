@@ -1,35 +1,60 @@
-# base model(text preprocessing, LSTM) : 0.93759
+# (Base) LSTM text preprocessing : 0.93759
 https://www.kaggle.com/morrispark/reaction?scriptVersionId=14950179
 
-# base model - sexual explicit add : 0.93737
+# LSTM - sexual explicit add : 0.93737
 https://www.kaggle.com/morrispark/treat-remove?scriptVersionId=14952221
 
-# base model - treat remove : 0.93714
+# LSTM - treat remove : 0.93714
 https://www.kaggle.com/morrispark/treat-remove
 
-# base model - detailed identity column add : 0.90093
+# LSTM - detailed identity column add : 0.90093
 https://www.kaggle.com/morrispark/rating?scriptVersionId=14951158
 
-# base model - numeric text add : 0.93342
+# LSTM - numeric text add : 0.93342
 https://www.kaggle.com/morrispark/annotator?scriptVersionId=14951914
 
-# base model - reaction weights add : 0.93759
+# LSTM - reaction weights add : 0.93759
 https://www.kaggle.com/morrispark/reaction?scriptVersionId=14961221
 
-# base model - annotator weights add : 0.93739
+# LSTM - annotator weights add : 0.93739
 https://www.kaggle.com/morrispark/annotator-add
 
-# base model - rating weights add : 0.93348
+# LSTM - rating weights add : 0.93348
 https://www.kaggle.com/morrispark/rating-add
 
-# base model - time weights add : 0.41041
+# LSTM - time weights add : 0.41041
 https://www.kaggle.com/morrispark/time-add
 
-# LSTM + BERT : out of memory
-https://www.kaggle.com/morrispark/bert-lstm
-
-# LSTM + BERT (Sequence = 220) : 0.93865
+# (Base) LSTM + BERT  (Sequence = 220) : 0.93865
 https://www.kaggle.com/morrispark/seq220
 
 # LSTM + BERT (Epoch = 4) : 0.93853
 https://www.kaggle.com/morrispark/epoch4
+
+# LSTM + BERT - puctuation remove: 0.93506
+https://www.kaggle.com/morrispark/puct-remove
+
+# LSTM + BERT - correct spelling remove: : 0.93849
+https://www.kaggle.com/morrispark/correct-spelling-remove
+
+# LSTM + BERT - extra puctuation remove: : 0.93834
+https://www.kaggle.com/morrispark/extra-puct-remove
+
+# (Base) LSTM + BERT - contraction remove: : 0.93871
+https://www.kaggle.com/morrispark/extra-puct-remove
+
+# (Base) LSTM + BERT - regular punctuation remove: : 0.93887
+https://www.kaggle.com/morrispark/spacing-punctuation-remove
+
+# LSTM + BERT (dropout = 0.5) : 0.93841
+https://www.kaggle.com/morrispark/220-dropout
+
+# (Base) 3BERT + 1LSTM (custom loss) : 0.94245
+https://www.kaggle.com/kdafke123141/3bert-1stm-custom-loss-multi-label?scriptVersionId=16123382
+
+# 3BERT + 1LSTM (custom loss) - cleansing change : 0.94217
+https://www.kaggle.com/morrispark/3bert-1stm-custom-loss-cleansing
+
+# (Base) 3BERT + 1LSTM (custom loss, multi-label) : 0.94258
+https://www.kaggle.com/kdafke123141/3bert-1stm-custom-loss-multi-label
+	
