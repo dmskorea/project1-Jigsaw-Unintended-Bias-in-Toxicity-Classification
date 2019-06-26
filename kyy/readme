@@ -41,10 +41,12 @@ i. 1 lstm + 3 bert + custom loss (weighted): 0.9424
   - lstm epoch 2 -> 3 
 https://www.kaggle.com/kdafke123141/3bert-1stm-custom-loss
 
-j. 1 lstm + 3 bert + custom loss + multi label cls : 0.94258
+j. 1 lstm + 3 bert + custom loss + multi label cls : 0.94258 
 
+(best) k. 1 lstm + 2 bert + custom loss + multi label : 0.925 (sigmoid bug fix 0.93) 
+  --> bert 3epoch 모델로 변경 해보기 / weight 주기 
 
-
+l. 1 bert + 1 gpt2 + 1 lstm custom loss + multi label cls : 0.94266
 
 
 
